@@ -17,8 +17,12 @@ class weaHistoryController: knCustomTableController {
         fetchData()
     }
     
-    override func setupView() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.hideBar(false)
+    }
+    
+    override func setupView() {
         title = "History"
         view.addSubview(tableView)
         tableView.fill(toView: view)

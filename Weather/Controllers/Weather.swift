@@ -27,6 +27,11 @@ class weaWeatherDetailController: knCustomTableController {
         setupView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hideBar(false)
+    }
+    
     override func setupView() {
         view.addSubview(tableView)
         tableView.fill(toView: view)
