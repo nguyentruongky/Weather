@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90A7F4FD1F04AF18A007EAAC /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7529A759A3BADA823BAFF793 /* Pods_Weather.framework */; };
+		C158B0B62061688900F30DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0B52061688900F30DD4 /* AppDelegate.swift */; };
+		C158B0BD2061688900F30DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C158B0BC2061688900F30DD4 /* Assets.xcassets */; };
+		C158B0C02061688900F30DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C158B0BE2061688900F30DD4 /* LaunchScreen.storyboard */; };
+		C158B0C8206168EF00F30DD4 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0C7206168EF00F30DD4 /* Setting.swift */; };
+		C158B0CA2061692600F30DD4 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0C92061692600F30DD4 /* Map.swift */; };
+		C158B0F72061695C00F30DD4 /* knCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0CE2061695C00F30DD4 /* knCell.swift */; };
+		C158B0F82061695C00F30DD4 /* knCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0CF2061695C00F30DD4 /* knCollectionController.swift */; };
+		C158B0F92061695C00F30DD4 /* knController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D02061695C00F30DD4 /* knController.swift */; };
+		C158B0FA2061695C00F30DD4 /* knTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D12061695C00F30DD4 /* knTableController.swift */; };
+		C158B0FB2061695C00F30DD4 /* knView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D22061695C00F30DD4 /* knView.swift */; };
+		C158B0FC2061695C00F30DD4 /* MIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D32061695C00F30DD4 /* MIDatePicker.swift */; };
+		C158B0FD2061695C00F30DD4 /* MIDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C158B0D42061695C00F30DD4 /* MIDatePicker.xib */; };
+		C158B0FE2061695C00F30DD4 /* WebBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D52061695C00F30DD4 /* WebBrowser.swift */; };
+		C158B0FF2061695C00F30DD4 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D72061695C00F30DD4 /* ImageDownloader.swift */; };
+		C158B1002061695C00F30DD4 /* knInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D82061695C00F30DD4 /* knInt.swift */; };
+		C158B1012061695C00F30DD4 /* knNSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0D92061695C00F30DD4 /* knNSDate.swift */; };
+		C158B1022061695C00F30DD4 /* knOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0DA2061695C00F30DD4 /* knOptional.swift */; };
+		C158B1032061695C00F30DD4 /* knString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0DB2061695C00F30DD4 /* knString.swift */; };
+		C158B1042061695C00F30DD4 /* knUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0DC2061695C00F30DD4 /* knUIApplication.swift */; };
+		C158B1052061695C00F30DD4 /* knUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0DD2061695C00F30DD4 /* knUIButton.swift */; };
+		C158B1062061695C00F30DD4 /* knUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0DE2061695C00F30DD4 /* knUIColor.swift */; };
+		C158B1072061695C00F30DD4 /* knUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0DF2061695C00F30DD4 /* knUIExtension.swift */; };
+		C158B1082061695C00F30DD4 /* knUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E02061695C00F30DD4 /* knUIImage.swift */; };
+		C158B1092061695C00F30DD4 /* knUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E12061695C00F30DD4 /* knUINavigationController.swift */; };
+		C158B10A2061695C00F30DD4 /* knUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E22061695C00F30DD4 /* knUIScrollView.swift */; };
+		C158B10B2061695C00F30DD4 /* knUISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E32061695C00F30DD4 /* knUISearchBar.swift */; };
+		C158B10C2061695C00F30DD4 /* knUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E42061695C00F30DD4 /* knUITableView.swift */; };
+		C158B10D2061695C00F30DD4 /* knUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E52061695C00F30DD4 /* knUITextField.swift */; };
+		C158B10E2061695C00F30DD4 /* knUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E62061695C00F30DD4 /* knUITextView.swift */; };
+		C158B10F2061695C00F30DD4 /* knUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E72061695C00F30DD4 /* knUIView.swift */; };
+		C158B1102061695C00F30DD4 /* knUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E82061695C00F30DD4 /* knUIViewController.swift */; };
+		C158B1112061695C00F30DD4 /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0E92061695C00F30DD4 /* knConstraints.swift */; };
+		C158B1122061695C00F30DD4 /* AskNotificationPermissionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0EB2061695C00F30DD4 /* AskNotificationPermissionWorker.swift */; };
+		C158B1132061695C00F30DD4 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0EC2061695C00F30DD4 /* Error.swift */; };
+		C158B1142061695C00F30DD4 /* GlobalSupporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0ED2061695C00F30DD4 /* GlobalSupporter.swift */; };
+		C158B1152061695C00F30DD4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0EE2061695C00F30DD4 /* JSONParser.swift */; };
+		C158B1162061695C00F30DD4 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0EF2061695C00F30DD4 /* KeyboardManager.swift */; };
+		C158B1172061695C00F30DD4 /* knScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F02061695C00F30DD4 /* knScreenSize.swift */; };
+		C158B1182061695C00F30DD4 /* LocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F12061695C00F30DD4 /* LocationWorker.swift */; };
+		C158B1192061695C00F30DD4 /* RegisterDeviceTokenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F22061695C00F30DD4 /* RegisterDeviceTokenWorker.swift */; };
+		C158B11A2061695C00F30DD4 /* SafeJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F32061695C00F30DD4 /* SafeJsonObject.swift */; };
+		C158B11B2061695C00F30DD4 /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F42061695C00F30DD4 /* ServiceConnector.swift */; };
+		C158B11C2061695C00F30DD4 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F52061695C00F30DD4 /* Worker.swift */; };
+		C158B11D2061695C00F30DD4 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B0F62061695C00F30DD4 /* UIViewController+Keyboard.swift */; };
+		C174835620616AC200FECEB8 /* AlamofireConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174835520616AC200FECEB8 /* AlamofireConnector.swift */; };
+		C174835820616B5300FECEB8 /* UIMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174835720616B5300FECEB8 /* UIMaker.swift */; };
+		C174835A2061702800FECEB8 /* GetWeatherWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17483592061702800FECEB8 /* GetWeatherWorker.swift */; };
+		C174835C2061720900FECEB8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174835B2061720900FECEB8 /* Weather.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7529A759A3BADA823BAFF793 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E11E0E8776EF02CBED0BDF0 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8E4D9E019D288B6CCDA7A5 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
+		C158B0B22061688900F30DD4 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C158B0B52061688900F30DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C158B0BC2061688900F30DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C158B0BF2061688900F30DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C158B0C12061688900F30DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C158B0C7206168EF00F30DD4 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		C158B0C92061692600F30DD4 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		C158B0CE2061695C00F30DD4 /* knCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knCell.swift; sourceTree = "<group>"; };
+		C158B0CF2061695C00F30DD4 /* knCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knCollectionController.swift; sourceTree = "<group>"; };
+		C158B0D02061695C00F30DD4 /* knController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knController.swift; sourceTree = "<group>"; };
+		C158B0D12061695C00F30DD4 /* knTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knTableController.swift; sourceTree = "<group>"; };
+		C158B0D22061695C00F30DD4 /* knView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knView.swift; sourceTree = "<group>"; };
+		C158B0D32061695C00F30DD4 /* MIDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDatePicker.swift; sourceTree = "<group>"; };
+		C158B0D42061695C00F30DD4 /* MIDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIDatePicker.xib; sourceTree = "<group>"; };
+		C158B0D52061695C00F30DD4 /* WebBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBrowser.swift; sourceTree = "<group>"; };
+		C158B0D72061695C00F30DD4 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		C158B0D82061695C00F30DD4 /* knInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knInt.swift; sourceTree = "<group>"; };
+		C158B0D92061695C00F30DD4 /* knNSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knNSDate.swift; sourceTree = "<group>"; };
+		C158B0DA2061695C00F30DD4 /* knOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knOptional.swift; sourceTree = "<group>"; };
+		C158B0DB2061695C00F30DD4 /* knString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knString.swift; sourceTree = "<group>"; };
+		C158B0DC2061695C00F30DD4 /* knUIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIApplication.swift; sourceTree = "<group>"; };
+		C158B0DD2061695C00F30DD4 /* knUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIButton.swift; sourceTree = "<group>"; };
+		C158B0DE2061695C00F30DD4 /* knUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIColor.swift; sourceTree = "<group>"; };
+		C158B0DF2061695C00F30DD4 /* knUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIExtension.swift; sourceTree = "<group>"; };
+		C158B0E02061695C00F30DD4 /* knUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIImage.swift; sourceTree = "<group>"; };
+		C158B0E12061695C00F30DD4 /* knUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUINavigationController.swift; sourceTree = "<group>"; };
+		C158B0E22061695C00F30DD4 /* knUIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIScrollView.swift; sourceTree = "<group>"; };
+		C158B0E32061695C00F30DD4 /* knUISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUISearchBar.swift; sourceTree = "<group>"; };
+		C158B0E42061695C00F30DD4 /* knUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUITableView.swift; sourceTree = "<group>"; };
+		C158B0E52061695C00F30DD4 /* knUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUITextField.swift; sourceTree = "<group>"; };
+		C158B0E62061695C00F30DD4 /* knUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUITextView.swift; sourceTree = "<group>"; };
+		C158B0E72061695C00F30DD4 /* knUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIView.swift; sourceTree = "<group>"; };
+		C158B0E82061695C00F30DD4 /* knUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIViewController.swift; sourceTree = "<group>"; };
+		C158B0E92061695C00F30DD4 /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
+		C158B0EB2061695C00F30DD4 /* AskNotificationPermissionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskNotificationPermissionWorker.swift; sourceTree = "<group>"; };
+		C158B0EC2061695C00F30DD4 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C158B0ED2061695C00F30DD4 /* GlobalSupporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSupporter.swift; sourceTree = "<group>"; };
+		C158B0EE2061695C00F30DD4 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		C158B0EF2061695C00F30DD4 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		C158B0F02061695C00F30DD4 /* knScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knScreenSize.swift; sourceTree = "<group>"; };
+		C158B0F12061695C00F30DD4 /* LocationWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWorker.swift; sourceTree = "<group>"; };
+		C158B0F22061695C00F30DD4 /* RegisterDeviceTokenWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDeviceTokenWorker.swift; sourceTree = "<group>"; };
+		C158B0F32061695C00F30DD4 /* SafeJsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeJsonObject.swift; sourceTree = "<group>"; };
+		C158B0F42061695C00F30DD4 /* ServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
+		C158B0F52061695C00F30DD4 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		C158B0F62061695C00F30DD4 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		C174835520616AC200FECEB8 /* AlamofireConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireConnector.swift; sourceTree = "<group>"; };
+		C174835720616B5300FECEB8 /* UIMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMaker.swift; sourceTree = "<group>"; };
+		C17483592061702800FECEB8 /* GetWeatherWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherWorker.swift; sourceTree = "<group>"; };
+		C174835B2061720900FECEB8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C158B0AF2061688900F30DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A7F4FD1F04AF18A007EAAC /* Pods_Weather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B7498A74691949D2B679A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7529A759A3BADA823BAFF793 /* Pods_Weather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C158B0A92061688900F30DD4 = {
+			isa = PBXGroup;
+			children = (
+				C158B0B42061688900F30DD4 /* Weather */,
+				C158B0B32061688900F30DD4 /* Products */,
+				C4D65EF01A0E718B29662242 /* Pods */,
+				8B7498A74691949D2B679A42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C158B0B32061688900F30DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0B22061688900F30DD4 /* Weather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C158B0B42061688900F30DD4 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0CB2061695C00F30DD4 /* knCollection */,
+				C158B0B52061688900F30DD4 /* AppDelegate.swift */,
+				C158B0BC2061688900F30DD4 /* Assets.xcassets */,
+				C158B0BE2061688900F30DD4 /* LaunchScreen.storyboard */,
+				C158B0C12061688900F30DD4 /* Info.plist */,
+				C158B0C7206168EF00F30DD4 /* Setting.swift */,
+				C158B0C92061692600F30DD4 /* Map.swift */,
+				C17483592061702800FECEB8 /* GetWeatherWorker.swift */,
+				C174835B2061720900FECEB8 /* Weather.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		C158B0CB2061695C00F30DD4 /* knCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0CC2061695C00F30DD4 /* Control */,
+				C158B0D62061695C00F30DD4 /* Extension */,
+				C158B0E92061695C00F30DD4 /* knConstraints.swift */,
+				C158B0EA2061695C00F30DD4 /* Others */,
+				C158B0F62061695C00F30DD4 /* UIViewController+Keyboard.swift */,
+				C174835520616AC200FECEB8 /* AlamofireConnector.swift */,
+				C174835720616B5300FECEB8 /* UIMaker.swift */,
+			);
+			path = knCollection;
+			sourceTree = "<group>";
+		};
+		C158B0CC2061695C00F30DD4 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0CD2061695C00F30DD4 /* BaseControl */,
+				C158B0D32061695C00F30DD4 /* MIDatePicker.swift */,
+				C158B0D42061695C00F30DD4 /* MIDatePicker.xib */,
+				C158B0D52061695C00F30DD4 /* WebBrowser.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		C158B0CD2061695C00F30DD4 /* BaseControl */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0CE2061695C00F30DD4 /* knCell.swift */,
+				C158B0CF2061695C00F30DD4 /* knCollectionController.swift */,
+				C158B0D02061695C00F30DD4 /* knController.swift */,
+				C158B0D12061695C00F30DD4 /* knTableController.swift */,
+				C158B0D22061695C00F30DD4 /* knView.swift */,
+			);
+			path = BaseControl;
+			sourceTree = "<group>";
+		};
+		C158B0D62061695C00F30DD4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0D72061695C00F30DD4 /* ImageDownloader.swift */,
+				C158B0D82061695C00F30DD4 /* knInt.swift */,
+				C158B0D92061695C00F30DD4 /* knNSDate.swift */,
+				C158B0DA2061695C00F30DD4 /* knOptional.swift */,
+				C158B0DB2061695C00F30DD4 /* knString.swift */,
+				C158B0DC2061695C00F30DD4 /* knUIApplication.swift */,
+				C158B0DD2061695C00F30DD4 /* knUIButton.swift */,
+				C158B0DE2061695C00F30DD4 /* knUIColor.swift */,
+				C158B0DF2061695C00F30DD4 /* knUIExtension.swift */,
+				C158B0E02061695C00F30DD4 /* knUIImage.swift */,
+				C158B0E12061695C00F30DD4 /* knUINavigationController.swift */,
+				C158B0E22061695C00F30DD4 /* knUIScrollView.swift */,
+				C158B0E32061695C00F30DD4 /* knUISearchBar.swift */,
+				C158B0E42061695C00F30DD4 /* knUITableView.swift */,
+				C158B0E52061695C00F30DD4 /* knUITextField.swift */,
+				C158B0E62061695C00F30DD4 /* knUITextView.swift */,
+				C158B0E72061695C00F30DD4 /* knUIView.swift */,
+				C158B0E82061695C00F30DD4 /* knUIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C158B0EA2061695C00F30DD4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0EB2061695C00F30DD4 /* AskNotificationPermissionWorker.swift */,
+				C158B0EC2061695C00F30DD4 /* Error.swift */,
+				C158B0ED2061695C00F30DD4 /* GlobalSupporter.swift */,
+				C158B0EE2061695C00F30DD4 /* JSONParser.swift */,
+				C158B0EF2061695C00F30DD4 /* KeyboardManager.swift */,
+				C158B0F02061695C00F30DD4 /* knScreenSize.swift */,
+				C158B0F12061695C00F30DD4 /* LocationWorker.swift */,
+				C158B0F22061695C00F30DD4 /* RegisterDeviceTokenWorker.swift */,
+				C158B0F32061695C00F30DD4 /* SafeJsonObject.swift */,
+				C158B0F42061695C00F30DD4 /* ServiceConnector.swift */,
+				C158B0F52061695C00F30DD4 /* Worker.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C4D65EF01A0E718B29662242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E11E0E8776EF02CBED0BDF0 /* Pods-Weather.debug.xcconfig */,
+				AD8E4D9E019D288B6CCDA7A5 /* Pods-Weather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C158B0B12061688900F30DD4 /* Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C158B0C42061688900F30DD4 /* Build configuration list for PBXNativeTarget "Weather" */;
+			buildPhases = (
+				2AA5EA11591B3A95A5933D0C /* [CP] Check Pods Manifest.lock */,
+				C158B0AE2061688900F30DD4 /* Sources */,
+				C158B0AF2061688900F30DD4 /* Frameworks */,
+				C158B0B02061688900F30DD4 /* Resources */,
+				EBFE99B8E6A5B504B2BE3AB2 /* [CP] Embed Pods Frameworks */,
+				956D09BA475FDC3ED384683D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weather;
+			productName = Weather;
+			productReference = C158B0B22061688900F30DD4 /* Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C158B0AA2061688900F30DD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = kynguyen;
+				TargetAttributes = {
+					C158B0B12061688900F30DD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C158B0AD2061688900F30DD4 /* Build configuration list for PBXProject "Weather" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C158B0A92061688900F30DD4;
+			productRefGroup = C158B0B32061688900F30DD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C158B0B12061688900F30DD4 /* Weather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C158B0B02061688900F30DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C158B0C02061688900F30DD4 /* LaunchScreen.storyboard in Resources */,
+				C158B0BD2061688900F30DD4 /* Assets.xcassets in Resources */,
+				C158B0FD2061695C00F30DD4 /* MIDatePicker.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AA5EA11591B3A95A5933D0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		956D09BA475FDC3ED384683D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBFE99B8E6A5B504B2BE3AB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C158B0AE2061688900F30DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C158B10C2061695C00F30DD4 /* knUITableView.swift in Sources */,
+				C158B1172061695C00F30DD4 /* knScreenSize.swift in Sources */,
+				C158B1122061695C00F30DD4 /* AskNotificationPermissionWorker.swift in Sources */,
+				C158B10F2061695C00F30DD4 /* knUIView.swift in Sources */,
+				C174835C2061720900FECEB8 /* Weather.swift in Sources */,
+				C158B0FC2061695C00F30DD4 /* MIDatePicker.swift in Sources */,
+				C158B0F72061695C00F30DD4 /* knCell.swift in Sources */,
+				C174835620616AC200FECEB8 /* AlamofireConnector.swift in Sources */,
+				C174835A2061702800FECEB8 /* GetWeatherWorker.swift in Sources */,
+				C158B10D2061695C00F30DD4 /* knUITextField.swift in Sources */,
+				C158B1072061695C00F30DD4 /* knUIExtension.swift in Sources */,
+				C158B1032061695C00F30DD4 /* knString.swift in Sources */,
+				C158B11B2061695C00F30DD4 /* ServiceConnector.swift in Sources */,
+				C174835820616B5300FECEB8 /* UIMaker.swift in Sources */,
+				C158B1012061695C00F30DD4 /* knNSDate.swift in Sources */,
+				C158B1062061695C00F30DD4 /* knUIColor.swift in Sources */,
+				C158B1102061695C00F30DD4 /* knUIViewController.swift in Sources */,
+				C158B0C8206168EF00F30DD4 /* Setting.swift in Sources */,
+				C158B1132061695C00F30DD4 /* Error.swift in Sources */,
+				C158B0FE2061695C00F30DD4 /* WebBrowser.swift in Sources */,
+				C158B1152061695C00F30DD4 /* JSONParser.swift in Sources */,
+				C158B1082061695C00F30DD4 /* knUIImage.swift in Sources */,
+				C158B0F92061695C00F30DD4 /* knController.swift in Sources */,
+				C158B0FB2061695C00F30DD4 /* knView.swift in Sources */,
+				C158B1112061695C00F30DD4 /* knConstraints.swift in Sources */,
+				C158B1002061695C00F30DD4 /* knInt.swift in Sources */,
+				C158B1162061695C00F30DD4 /* KeyboardManager.swift in Sources */,
+				C158B1052061695C00F30DD4 /* knUIButton.swift in Sources */,
+				C158B0FF2061695C00F30DD4 /* ImageDownloader.swift in Sources */,
+				C158B11C2061695C00F30DD4 /* Worker.swift in Sources */,
+				C158B1142061695C00F30DD4 /* GlobalSupporter.swift in Sources */,
+				C158B0CA2061692600F30DD4 /* Map.swift in Sources */,
+				C158B1042061695C00F30DD4 /* knUIApplication.swift in Sources */,
+				C158B0F82061695C00F30DD4 /* knCollectionController.swift in Sources */,
+				C158B11D2061695C00F30DD4 /* UIViewController+Keyboard.swift in Sources */,
+				C158B1092061695C00F30DD4 /* knUINavigationController.swift in Sources */,
+				C158B10A2061695C00F30DD4 /* knUIScrollView.swift in Sources */,
+				C158B1182061695C00F30DD4 /* LocationWorker.swift in Sources */,
+				C158B0B62061688900F30DD4 /* AppDelegate.swift in Sources */,
+				C158B1192061695C00F30DD4 /* RegisterDeviceTokenWorker.swift in Sources */,
+				C158B10E2061695C00F30DD4 /* knUITextView.swift in Sources */,
+				C158B1022061695C00F30DD4 /* knOptional.swift in Sources */,
+				C158B0FA2061695C00F30DD4 /* knTableController.swift in Sources */,
+				C158B10B2061695C00F30DD4 /* knUISearchBar.swift in Sources */,
+				C158B11A2061695C00F30DD4 /* SafeJsonObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C158B0BE2061688900F30DD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C158B0BF2061688900F30DD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C158B0C22061688900F30DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C158B0C32061688900F30DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C158B0C52061688900F30DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E11E0E8776EF02CBED0BDF0 /* Pods-Weather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67FN8R2DGD;
+				INFOPLIST_FILE = Weather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Weather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C158B0C62061688900F30DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8E4D9E019D288B6CCDA7A5 /* Pods-Weather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67FN8R2DGD;
+				INFOPLIST_FILE = Weather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Weather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C158B0AD2061688900F30DD4 /* Build configuration list for PBXProject "Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C158B0C22061688900F30DD4 /* Debug */,
+				C158B0C32061688900F30DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C158B0C42061688900F30DD4 /* Build configuration list for PBXNativeTarget "Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C158B0C52061688900F30DD4 /* Debug */,
+				C158B0C62061688900F30DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C158B0AA2061688900F30DD4 /* Project object */;
+}
