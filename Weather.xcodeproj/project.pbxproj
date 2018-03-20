@@ -56,6 +56,8 @@
 		C174835820616B5300FECEB8 /* UIMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174835720616B5300FECEB8 /* UIMaker.swift */; };
 		C174835A2061702800FECEB8 /* GetWeatherWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17483592061702800FECEB8 /* GetWeatherWorker.swift */; };
 		C174835C2061720900FECEB8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174835B2061720900FECEB8 /* Weather.swift */; };
+		C17483602061863400FECEB8 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174835F2061863400FECEB8 /* History.swift */; };
+		C17483622061904300FECEB8 /* OfflineStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17483612061904300FECEB8 /* OfflineStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		C174835720616B5300FECEB8 /* UIMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMaker.swift; sourceTree = "<group>"; };
 		C17483592061702800FECEB8 /* GetWeatherWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherWorker.swift; sourceTree = "<group>"; };
 		C174835B2061720900FECEB8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		C174835F2061863400FECEB8 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		C17483612061904300FECEB8 /* OfflineStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,14 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				C158B0CB2061695C00F30DD4 /* knCollection */,
-				C158B0B52061688900F30DD4 /* AppDelegate.swift */,
-				C158B0BC2061688900F30DD4 /* Assets.xcassets */,
-				C158B0BE2061688900F30DD4 /* LaunchScreen.storyboard */,
-				C158B0C12061688900F30DD4 /* Info.plist */,
-				C158B0C7206168EF00F30DD4 /* Setting.swift */,
-				C158B0C92061692600F30DD4 /* Map.swift */,
-				C17483592061702800FECEB8 /* GetWeatherWorker.swift */,
-				C174835B2061720900FECEB8 /* Weather.swift */,
+				C174835E2061833300FECEB8 /* supports */,
+				C174835D2061832300FECEB8 /* Controllers */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -246,6 +244,30 @@
 				C158B0F52061695C00F30DD4 /* Worker.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		C174835D2061832300FECEB8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0C92061692600F30DD4 /* Map.swift */,
+				C174835B2061720900FECEB8 /* Weather.swift */,
+				C174835F2061863400FECEB8 /* History.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C174835E2061833300FECEB8 /* supports */ = {
+			isa = PBXGroup;
+			children = (
+				C158B0C12061688900F30DD4 /* Info.plist */,
+				C158B0B52061688900F30DD4 /* AppDelegate.swift */,
+				C158B0BC2061688900F30DD4 /* Assets.xcassets */,
+				C158B0BE2061688900F30DD4 /* LaunchScreen.storyboard */,
+				C158B0C7206168EF00F30DD4 /* Setting.swift */,
+				C17483592061702800FECEB8 /* GetWeatherWorker.swift */,
+				C17483612061904300FECEB8 /* OfflineStorage.swift */,
+			);
+			path = supports;
 			sourceTree = "<group>";
 		};
 		C4D65EF01A0E718B29662242 /* Pods */ = {
@@ -422,12 +444,14 @@
 				C158B1052061695C00F30DD4 /* knUIButton.swift in Sources */,
 				C158B0FF2061695C00F30DD4 /* ImageDownloader.swift in Sources */,
 				C158B11C2061695C00F30DD4 /* Worker.swift in Sources */,
+				C17483622061904300FECEB8 /* OfflineStorage.swift in Sources */,
 				C158B1142061695C00F30DD4 /* GlobalSupporter.swift in Sources */,
 				C158B0CA2061692600F30DD4 /* Map.swift in Sources */,
 				C158B1042061695C00F30DD4 /* knUIApplication.swift in Sources */,
 				C158B0F82061695C00F30DD4 /* knCollectionController.swift in Sources */,
 				C158B11D2061695C00F30DD4 /* UIViewController+Keyboard.swift in Sources */,
 				C158B1092061695C00F30DD4 /* knUINavigationController.swift in Sources */,
+				C17483602061863400FECEB8 /* History.swift in Sources */,
 				C158B10A2061695C00F30DD4 /* knUIScrollView.swift in Sources */,
 				C158B1182061695C00F30DD4 /* LocationWorker.swift in Sources */,
 				C158B0B62061688900F30DD4 /* AppDelegate.swift in Sources */,
@@ -568,7 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67FN8R2DGD;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -584,7 +608,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67FN8R2DGD;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";

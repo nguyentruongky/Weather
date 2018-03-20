@@ -7,42 +7,64 @@
 //
 
 import Foundation
-//api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}
-
-struct weaWeatherModel {
+class weaWeatherModel: NSObject, NSCoding {
     var placeName: String?
+    var country: String?
     var weather: String?
     var weatherDesc: String?
-    var temp: Double = 0
-    var humidity: Double = 0
-    var tempMin: Double = 0
-    var tempMax: Double = 0
+    var temp: String = ""
+    var humidity: String = ""
+    var tempMin: String = ""
+    var tempMax: String = ""
+    
+    required init(coder aDecoder: NSCoder) {
+        placeName = aDecoder.decodeObject(forKey: "placeName") as? String
+        country = aDecoder.decodeObject(forKey: "country") as? String
+        weather = aDecoder.decodeObject(forKey: "weather") as? String
+        weatherDesc = aDecoder.decodeObject(forKey: "weatherDesc") as? String
+        temp = aDecoder.decodeObject(forKey: "temp") as? String ?? ""
+        humidity = aDecoder.decodeObject(forKey: "humidity") as? String ?? ""
+        tempMin = aDecoder.decodeObject(forKey: "tempMin") as? String ?? ""
+        tempMax = aDecoder.decodeObject(forKey: "tempMax") as? String ?? ""
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(placeName, forKey: "placeName")
+        aCoder.encode(country, forKey: "country")
+        aCoder.encode(weather, forKey: "weather")
+        aCoder.encode(weatherDesc, forKey: "weatherDesc")
+        aCoder.encode(temp, forKey: "temp")
+        aCoder.encode(humidity, forKey: "humidity")
+        aCoder.encode(tempMin, forKey: "tempMin")
+        aCoder.encode(tempMax, forKey: "tempMax")
+    }
     
     init(rawData: AnyObject) {
         placeName = rawData.value(forKeyPath: "name") as? String
+        country = rawData.value(forKeyPath: "sys.country") as? String
         if let weatherRaw = (rawData.value(forKeyPath: "weather") as? [AnyObject])?.first {
             weather = weatherRaw.value(forKeyPath: "main") as? String
             weatherDesc = weatherRaw.value(forKeyPath: "description") as? String
         }
         if let data = rawData.value(forKeyPath: "main.temp") as? Double {
-            temp = data
+            temp = String(data) + "°F"
         }
         
         if let data = rawData.value(forKeyPath: "main.humidity") as? Double {
-            humidity = data
+            humidity = String(data)
         }
         if let data = rawData.value(forKeyPath: "main.temp_min") as? Double {
-            tempMin = data
+            tempMin = String(data) + "°F"
         }
         if let data = rawData.value(forKeyPath: "main.temp_max") as? Double {
-            tempMax = data
+            tempMax = String(data) + "°F"
         }
     }
 }
 
 struct weaGetWeatherWorker : knWorker {
     
-    private let api = "http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&appid=%@"
+    private let api = "http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&appid=%@&units=imperial"
     var lat: Double
     var long: Double
     

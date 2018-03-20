@@ -17,6 +17,11 @@ class weaWeatherDetailController: knCustomTableController {
         }
     }
     
+    var offlineData: weaWeatherModel? { didSet {
+        guard let data = offlineData else { return }
+        renderData(weather: data)
+        }}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -35,6 +40,11 @@ class weaWeatherDetailController: knCustomTableController {
     }
     
     func didFetchWeatherSuccess(weather: weaWeatherModel) {
+        renderData(weather: weather)
+        saveHistory(weather: weather)
+    }
+    
+    func renderData(weather: weaWeatherModel) {
         var cells = [knTableCell]()
         if let data = weather.placeName {
             cells.append(makeTitleCell(data, fontSize: 20))
@@ -95,7 +105,9 @@ class weaWeatherDetailController: knCustomTableController {
     }
     
     func didFetchWeatherFail(err: knError) {
-        
+        let controller = UIAlertController(title: "Error", message: err.message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(controller)
     }
 }
 
@@ -108,5 +120,18 @@ extension weaWeatherDetailController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 64 }
 }
+
+
+extension weaWeatherDetailController {
+    func saveHistory(weather: weaWeatherModel) {
+        weaOfflineStorage.save(weather: weather)
+    }
+}
+
+
+
+
+
+
 
 

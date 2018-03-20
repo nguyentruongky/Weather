@@ -69,7 +69,13 @@ class weaMapController: knCustomTableController {
         mapView.delegate = self
         mapView.isMyLocationEnabled = true
         
-        view.addSubviews(views: tableView, searchTextField)
+        let historyButton = knUIMaker.makeButton(title: "History", font: UIFont.systemFont(ofSize: 15))
+
+        view.addSubviews(views: historyButton, tableView, searchTextField)
+        
+        historyButton.top(toView: tableView)
+        historyButton.centerX(toView: view)
+        historyButton.addTarget(self, action: #selector(handleViewHistory))
         
         searchTextField.horizontal(toView: view, space: padding)
         searchTextField.top(toView: view, space: 60)
@@ -83,10 +89,16 @@ class weaMapController: knCustomTableController {
         view.addSubview(button)
         button.fill(toView: searchTextField)
         button.addTarget(self, action: #selector(handleActivateTextField))
+        
+        
     }
     
     @objc func handleActivateTextField() {
         searchTextField.becomeFirstResponder()
+    }
+    
+    @objc func handleViewHistory() {
+        push(weaHistoryController())
     }
     
     override func registerCells() {
