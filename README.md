@@ -8,3 +8,6 @@ A small weather app use OpenWeatherMap API
 Work in very short time, so that many things need to be improved
 - UI: Not attractive and no animation available. 
 - Local database: Store into CoreData or Realm. Currently store into UserDefault with loose-coupling pattern, easy to change database later.
+
+## Time of working 
+2 hours and 45 minutes
